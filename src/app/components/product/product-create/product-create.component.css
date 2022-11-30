@@ -1,0 +1,14 @@
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+button {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.pd {
+  padding: 10px;
+}

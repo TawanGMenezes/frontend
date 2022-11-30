@@ -1,4 +1,31 @@
-<button mat-raised-button (click)="createProduct()" color="primary">
-  Salvar
-</button>
-<button mat-raised-button (click)="cancel()">Cancelar</button>
+<mat-card class="pd">
+  <mat-card-title>Novo Produto</mat-card-title>
+  <form>
+    <label for="name">Nome</label>
+    <mat-form-field>
+      <input
+        type="text"
+        matInput
+        placeholder="Ex: Fulano"
+        name="name"
+        [(ngModel)]="product.name"
+      />
+    </mat-form-field>
+    <label for="price">Preço</label>
+    <mat-form-field>
+      <input
+        type="number"
+        matInput
+        placeholder="Ex: 0.00"
+        name="price"
+        [(ngModel)]="product.price"
+      />
+    </mat-form-field>
+  </form>
+  <span>
+    <button mat-raised-button (click)="createProduct()" color="primary">
+      Salvar
+    </button>
+    <button mat-raised-button (click)="cancel()">Cancelar</button>
+  </span>
+</mat-card>
