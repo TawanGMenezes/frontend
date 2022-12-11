@@ -10,9 +10,9 @@ import { Product } from '../interfaces/product';
   providedIn: 'root',
 })
 export class ProductService {
-  baseUrl: string = ' http://localhost:3001/products';
+  baseUrl: string = ' http://localhost:3000/products';
 
-  constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
+  constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
   showMessage(msg: string, isError: boolean = false): void {
     this.snackBar.open(msg, 'Fechar', {
